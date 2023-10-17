@@ -1,0 +1,83 @@
+@use '../../sass/_mixins'
+@use '../../sass/_variables'
+
+
+.rules
+
+    .popIp-out
+        background: #00000066
+        position: absolute
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100vw
+        height: 100vh
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        .popup-header
+            display: flex
+            color: variables.$Dark-Text
+            height: 50px
+            margin-bottom: 30px 
+            justify-content: space-between
+            align-items: center
+            @include mixins.mobile
+                justify-content: center
+
+            h3
+                font-size: 1.6rem
+                font-weight: 700
+
+            button
+                background-color: transparent
+                border: none
+                cursor: pointer
+                transition: .23s
+                display: flex
+                padding: 10px
+                &:hover
+                    background-color: #0000001f
+                    border-radius: 50% 
+                @include mixins.mobile
+                    display: none
+
+        .popUp
+            background-color: variables.$White-Color
+            padding: 2rem
+            border-radius: 10px
+            @include mixins.mobile
+                width: 100vw
+                display: flex
+                flex-direction: column
+                height: 100vh
+                img
+                    width: 90%
+                    margin: auto
+            
+    .rules-btn-div
+        position: absolute
+        right: 20px
+        bottom: 20px
+        @include mixins.mobile
+            width: 100%
+            height: 0px
+            right: 0
+            bottom: 0        
+
+        button
+            background: transparent
+            padding: 10px 30px
+            border-radius: 7px
+            color: variables.$Font-Color
+            letter-spacing: 1.2px
+            border: solid 2px 
+            cursor: pointer     
+            @include mixins.mobile
+                position: absolute
+                bottom: 20px
+                left: 50%
+                transform: translateX(-50%)
+            &:hover
+                border: dashed 2px
+                text-shadow: 0.5rem 0.5rem .5rem #000000b8

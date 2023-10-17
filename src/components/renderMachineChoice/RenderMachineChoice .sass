@@ -1,0 +1,56 @@
+@use '../../sass/_mixins'
+@use '../../sass/_variables'
+
+.choices
+    z-index: 9
+    .one
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 190px
+        width: 190px
+        border-radius: 50%
+        cursor: pointer
+        box-shadow: inset  0px -3px 0px #00000069
+        background-image: linear-gradient(variables.$Paper-Gradient) 
+        @include mixins.mobile
+            height: 140px
+            width: 140px
+    .three
+        background-image: linear-gradient(variables.$Scissors-Gradient) 
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 190px
+        width: 190px
+        border-radius: 50%
+        cursor: pointer
+        box-shadow: inset  0px -3px 0px #00000069
+        @include mixins.mobile
+            height: 140px
+            width: 140px
+    .two
+        background-image: linear-gradient(variables.$Rock-Gradient)
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 190px
+        width: 190px
+        border-radius: 50%
+        cursor: pointer
+        box-shadow: inset  0px -3px 0px #00000069
+        @include mixins.mobile
+            height: 140px
+            width: 140px
+    img
+        background: variables.$Font-Color
+        padding: 2rem
+        width: 140px
+        height: 140px
+        border-radius:50% 
+        box-shadow: inset  0px 4px 0px #0000001e
+        @include mixins.mobile
+            width: 100px
+            height: 100px
+
+   
