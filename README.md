@@ -22,8 +22,8 @@ This is a solution to the [Rock, Paper, Scissors ](https://www.frontendmentor.io
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com) // to add
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) // to add
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/resposive-app-react-sass-b58nDJdt-X)
+- Live Site URL: [Add live site URL here](https://magical-duckanoo-d9dbfc.netlify.app/)
 
 ### Built with
 
